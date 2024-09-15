@@ -1,0 +1,8 @@
+my_cpu_test(xor_test)
+my_cpu_test(and_4_test)
+my_cpu_test(or_4_test)
+my_cpu_test(mpx_test)
+my_cpu_test(mpx_4_test)
+my_cpu_test(dmpx_test)
+my_cpu_test(dmpx_4_test)
+my_cpu_test(nor_test)
