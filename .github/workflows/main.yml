@@ -13,5 +13,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: "Download gtest and unzip archive"
+        run: |
+          wget https://github.com/google/googletest/releases/download/v1.15.2/googletest-1.15.2.tar.gz
+          tar -xvf googletest-1.15.2.tar.gz
+      - name: "Build project"
+        uses: threeal/cmake-action@v2.0.0
+        with:
+          source-dir: .
+          build-dir: build
