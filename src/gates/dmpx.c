@@ -44,7 +44,7 @@ void printDmpx(DeMultiplexer* node) {
 void freeInternalDeMultiplexer(InternalDeMultiplexer* node) {
     freeAnd(node->andA);
     freeAnd(node->andB);
-    freeAnd(node->notNode);
+    freeNot(node->notNode);
     free(node);
 }
 
