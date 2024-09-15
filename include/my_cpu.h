@@ -15,3 +15,5 @@
 
 #include "latches/sr_latch.h"
 #include "latches/d_latch.h"
+#include "latches/d_flip_flop.h"
+#include "latches/resettable_d_flip_flop.h"
