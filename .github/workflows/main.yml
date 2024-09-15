@@ -2,7 +2,7 @@ name: Build and test
 
 on:
   push:
-    branches: master
+    branches: [master, dev]
   pull_request:
     types:
       - closed
@@ -19,8 +19,15 @@ jobs:
         run: |
           wget https://github.com/google/googletest/releases/download/v1.15.2/googletest-1.15.2.tar.gz
           tar -xvf googletest-1.15.2.tar.gz
-      - name: "Build project"
+      - name: Build project
         uses: threeal/cmake-action@v2.0.0
         with:
           source-dir: .
           build-dir: build
+          options: |
+            GTEST_DIR=googletest-1.15.2
+            MY_CPU_BUILD_TESTS=ON
+      - name: Test Project
+        uses: threeal/ctest-action@v1.1.0
+        with:
+          test-dir: build/test
