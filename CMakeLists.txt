@@ -16,6 +16,7 @@ target_include_directories(
 add_subdirectory(src/basic)
 add_subdirectory(src/gates)
 add_subdirectory(src/latches)
+add_subdirectory(src/arithmetic_units)
 
 if(MY_CPU_BUILD_TESTS)
   add_subdirectory(test)
