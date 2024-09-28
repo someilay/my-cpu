@@ -13,10 +13,7 @@ target_include_directories(
     PUBLIC include
     PRIVATE src
 )
-add_subdirectory(src/basic)
-add_subdirectory(src/gates)
-add_subdirectory(src/latches)
-add_subdirectory(src/arithmetic_units)
+add_subdirectory(src)
 
 if(MY_CPU_BUILD_TESTS)
   add_subdirectory(test)
