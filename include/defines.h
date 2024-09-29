@@ -10,4 +10,9 @@
 #define AF_MALLOC(varName, typeName, size, value) A_MALLOC(varName, typeName, size); memset(varName, value, sizeof(typeName) * size)
 #define AIF_MALLOC(varName, typeName, size, value) AI_MALLOC(varName, typeName, size); memset(varName, value, sizeof(typeName) * size)
 
+#define B32 sizeof(bit) * 32
+#define B16 sizeof(bit) * 16
+#define B8 sizeof(bit) * 8
+#define B4 sizeof(bit) * 4
+
 #endif

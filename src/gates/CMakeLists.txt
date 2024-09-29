@@ -3,6 +3,9 @@ set(
     xor.c
     and_4.c
     or_4.c
+    or_8.c
+    or_16.c
+    or_32.c
     mpx.c
     mpx_4.c
     dmpx.c
