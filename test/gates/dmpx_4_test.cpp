@@ -17,7 +17,7 @@ protected:
     DeMultiplexer4* dmpx4node;
 };
 
-TEST_F(DeMultiplexer4Test, TestDmpxPropagate) {
+TEST_F(DeMultiplexer4Test, TestDmpx4Propagate) {
     for (bit i = 0; i < 2; i++) {
         for (bit j = 0; j < 4; j++) {
             dmpx4node->input = i;

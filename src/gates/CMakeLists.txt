@@ -10,6 +10,9 @@ set(
     mpx_4.c
     dmpx.c
     dmpx_4.c
+    dmpx_16.c
+    dmpx_256.c
+    dmpx_65kb.c
     nor.c
     32_and_32.c
     32_or_32.c
